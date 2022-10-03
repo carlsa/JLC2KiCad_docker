@@ -8,7 +8,9 @@ Build with
 Start container with 
 
 
-docker run -it --rm -v $PWD/lib:/usr/src/app/lib jlc2kicad:Dockerfile
+# " around $PWD are required in case there are spaces in the directory name
+docker run -it --rm -v "$PWD/lib":/usr/src/app/lib jlc2kicad:Dockerfile
 
 -it makes an interactive container
 -rm removes it after use
+
