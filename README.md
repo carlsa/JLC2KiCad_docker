@@ -3,6 +3,7 @@ This docker file allow you run [JLC2KiCad_lib](https://github.com/TousstNicolas/
 
 # Construct the image
 In the git repository, run
+
 `docker build -t "jlc2kicad:Dockerfile" .`
 
 # Use the container
@@ -20,4 +21,5 @@ The " around $PWD are reqired if your path contains spaces
 
 ## Add components
 You can use JLC2KiCadLib in the interactive shell, for example like this.
+
 `JLC2KiCadLib C10487 --skip_existing -dir lib -symbol_lib <SYMBOL LIBRARY NAME> -footprint_lib <FOOTPRINT LIBRARY NAME>`
